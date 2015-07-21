@@ -1,0 +1,16 @@
+modules {
+  module {
+    name = "socket_total"
+    language = "python"
+  }
+}
+
+collection_group {
+  collect_every = 30
+  time_threshold = 30
+  metric {
+    name = "socket_total"
+    title = "Socket_Total"
+    value_threshold = 100
+  }
+}
